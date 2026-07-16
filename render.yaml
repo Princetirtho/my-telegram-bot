@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: my-telegram-bot
+    runtime: python3
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8892008701:AAGnaD6YAoiMaNlwvnowULCJYFU6Bwcd0CM
+      - key: ADMIN_ID
+        value: 8212595643
+    pythonVersion: 3.10.11
